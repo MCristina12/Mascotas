@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mascota"
+        android:id="@+id/img_detalle"
+        android:layout_gravity="center_horizontal">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:id="@+id/tv_nombre"
+        android:textStyle="bold"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/madre"
+        android:id="@+id/tv_madre"
+        android:textStyle="bold"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_telefono"
+        android:text="@string/telefono"
+        android:textStyle="bold"
+        android:textSize="30dp">
+    </TextView>
+</LinearLayout>
