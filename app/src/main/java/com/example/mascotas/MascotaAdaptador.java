@@ -36,8 +36,6 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         Mascota mascota = mascotas.get(position);
         holder.img.setImageResource(mascota.getFoto());
         holder.nombre.setText(mascota.getNombre());
-        //holder.madre.setText(mascota.getMadre());
-        //holder.telefono.setText(mascota.getTelefono());
 
 
         holder.img.setOnClickListener(new View.OnClickListener() {
@@ -63,15 +61,11 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
         private ImageView img;
         private TextView nombre;
-        //private TextView madre;
-        //private TextView telefono;
 
         public MascotaViewHolder(@NonNull View itemView) {
             super(itemView);
             img = (ImageView) itemView.findViewById(R.id.img_cv_mascota);
             nombre = (TextView) itemView.findViewById(R.id.tv_cv_nombre);
-            //madre = (TextView) itemView.findViewById(R.id.tv_madre);
-            //telefono = (TextView) itemView.findViewById(R.id.tv_telefono);
         }
     }
 }
